@@ -222,6 +222,11 @@ courses
     display: flex;
     width: 100%;
     text-decoration: none;
+    filter: drop-shadow(4px 4px 0 var(--color-accent-red));
+    transition: filter 0.3s ease;
+}
+.courses-item:hover {
+    filter: drop-shadow(12px 12px 2px var(--color-accent-red));
 }
 .courses-item-img {
     position: relative;
@@ -269,6 +274,9 @@ courses
     gap: 10px;
     padding: 20px;
     background-color: var(--color-accent-yellow);
+}
+.courses-item:hover .courses-item-body {
+    background-color: var(--color-course-hover-yellow);
 }
 .courses-item-descript{
     font-size: 16px;
