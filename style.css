@@ -197,8 +197,6 @@ about
     object-fit: cover;
 }
 @media (max-width: 750px) {
-    .about{
-    }
     .container{
         padding: 0 20px;
     }
@@ -283,7 +281,7 @@ courses
 .courses-item:hover .courses-item-body {
     background-color: var(--color-course-hover-yellow);
 }
-.courses-item-descript{
+.courses-item-description{
     color: var(--color-black);
     margin: 0;
     width: 100%;
@@ -311,7 +309,7 @@ courses
     .courses-item-body{
         font-size: 12px;
     }
-    .courses-item-descript{
+    .courses-item-description{
         height: auto;
     }
 }
