@@ -52,6 +52,11 @@ h2 {
     letter-spacing: 0.02em;
     margin: 0;
 }
+@media (max-width: 750px) {
+    .section-header{
+        font-size: 24px;
+    }
+}
 
 
 /* 
@@ -165,6 +170,7 @@ about
     max-width: 880px;
     gap: 40px;
 }
+/* .about-container */
 .about-grand{
     color: var(--color-accent-red);
 }
@@ -195,9 +201,6 @@ about
     }
     .container{
         padding: 0 20px;
-    }
-    .about-header{
-        font-size: 24px;
     }
     .about-img-wrapper {
         display: none;
@@ -275,20 +278,44 @@ courses
     gap: 10px;
     padding: 20px;
     background-color: var(--color-accent-yellow);
+    font-size: 16px;
 }
 .courses-item:hover .courses-item-body {
     background-color: var(--color-course-hover-yellow);
 }
 .courses-item-descript{
-    font-size: 16px;
     color: var(--color-black);
     margin: 0;
+    width: 100%;
+    height: 100%;
 }
 .courses-item-more{
     color: var(--color-accent-red);
     display: flex;
     justify-content: end;
 }
+@media (max-width: 750px) {
+    .courses-container{
+        padding: 40px 20px;
+    }
+    .courses-item {
+        flex-direction: column;
+    }
+    .courses-item-img {
+        width: 100%;
+        height: 200px;
+    }
+    .courses-item-img > span {
+        font-size: 24px;
+    }
+    .courses-item-body{
+        font-size: 12px;
+    }
+    .courses-item-descript{
+        height: auto;
+    }
+}
+
 /* courses-button */
 .all-courses-button{
     width: 100%;
@@ -314,4 +341,17 @@ courses
 .all-courses-button:hover {
     background-color: var(--color-button-hover-red);
     filter: drop-shadow(12px 12px 2px var(--color-accent-yellow));
+}
+@media (max-width: 750px) {
+    .all-courses-button {
+        padding: 10px 20px;
+        height: 40px;
+    }
+    .all-courses-button-write {
+        font-size: 14px;
+    }
+    .all-courses-button > svg {
+        width: 30px;
+        height: 30px;
+    }
 }
