@@ -353,3 +353,12 @@ courses
         height: 30px;
     }
 }
+
+
+/* 
+form
+ */
+ .form{
+    width: 100%;
+    background-color: var(--color-accent-yellow);
+}
