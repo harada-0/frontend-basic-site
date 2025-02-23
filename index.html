@@ -123,16 +123,16 @@
                 </p>
                 <form class="form-items-wrapper" action="#">
                     <label class="form-item-wrapper" for="name">お名前</label>
-                    <input class="form-item" type="text" name="user-name" id="name">
+                    <input class="form-item" type="text" name="user-name" id="name" placeholder="エドワード ヴァン 太郎">
                     
                     <label class="form-item-wrapper" for="email">メールアドレス</label>
-                    <input class="form-item" type="email" name="user-email" id="email">
+                    <input class="form-item" type="email" name="user-email" id="email" placeholder="grand.players@example.com">
                     
                     <label class="form-item-wrapper" for="experience">ギター歴（年）</label>
-                    <input class="form-item" type="text" name="user-experience" id="experience">
+                    <input class="form-item" type="number" min="0" name="user-experience" id="experience" placeholder="3">
                     
                     <label class="form-item-wrapper" for="commitment">意気込みをどうぞ！</label>
-                    <textarea class="form-item" name="user-commitment" id="commitment" rows="" cols=""></textarea>
+                    <textarea class="form-item textarea" name="user-commitment" id="commitment" rows="" cols="" placeholder="イカすギターソロをかましてモテた～い！"></textarea>
                 </form>
                 <a class="all-courses-button form-button" href="#">
                     <div class="all-courses-button-write">送信する</div>
@@ -143,5 +143,8 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <small class="small">©2023 GrandPlayers</small>
+    </footer>
 </body>
 </html>
