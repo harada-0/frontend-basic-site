@@ -358,7 +358,7 @@ courses
 /* 
 form
  */
- .form{
+.form{
     width: 100%;
     background-color: var(--color-accent-yellow);
 }
@@ -386,6 +386,9 @@ form
     color: var(--color-black);
     font-size: 16px;
 }
+::placeholder{
+    color: var(--color-form-placeholder-gray);
+}
 .textarea{
     resize: vertical;
     min-height: 150px;
@@ -395,6 +398,29 @@ form
 }
 .form-button:hover {
     filter: drop-shadow(12px 12px 2px var(--color-black));
+}
+@media (max-width: 750px) {
+    .container{
+        padding: 40px 20px;
+    }
+    .section-header{
+        font-size: 24px;
+    }
+    .form-items-wrapper{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .form-item-wrapper{
+        font-size: 16px;
+    }
+    .form-item{
+        padding: 8px;
+        font-size: 12px;
+    }
+    .textarea{
+        min-height: 80px;
+    }
 }
 
 
@@ -412,4 +438,12 @@ footer
 .small{
     color: var(--color-white);
     font-size: 16px;
+}
+@media (max-width: 750px) {
+    .footer{
+        padding: 40px 0;
+    }
+    .small{
+        font-size: 12px;
+    }
 }
